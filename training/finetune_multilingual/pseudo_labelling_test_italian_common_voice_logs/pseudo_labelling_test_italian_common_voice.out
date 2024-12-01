@@ -1,3 +1,6 @@
 CUDA is available: True
-[1;34mwandb[0m: 🚀 View run [33mcolorful-planet-3[0m at: [34mhttps://wandb.ai/manisha27-panda-texas-a-m-university/distil-whisper-labelling-italian-common-voice/runs/1fclico1[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241130_142013-1fclico1/logs[0m
+train+validation+test
+Saving transcriptions for split train step 500
+Saving final transcriptions for split train.
+Saving final transcriptions for split validation.
+Saving final transcriptions for split test.

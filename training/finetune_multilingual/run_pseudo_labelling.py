@@ -40,7 +40,8 @@ from datasets import (
     DatasetDict,
     IterableDatasetDict,
     load_dataset,
-    load_from_disk
+    load_from_disk,
+    get_dataset_split_names
 )
 from huggingface_hub import HfFolder, create_repo, get_full_repo_name, snapshot_download, upload_folder
 from torch.utils.data import DataLoader
@@ -500,7 +501,12 @@ def main():
     token = model_args.token if model_args.token is not None else HfFolder().get_token()
 
     data_splits = data_args.dataset_split_name.split("+")
+    print(data_args.dataset_split_name)
     for split in data_splits:
+        # Explicitly ignore unwanted splits
+        if split in ["invalidated", "other"]:
+            logger.info(f"Ignoring unwanted split: {split}")
+            continue
         with accelerator.main_process_first():
             if os.path.isdir(data_args.dataset_name):
                 raw_datasets[split] = load_from_disk(data_args.dataset_name)

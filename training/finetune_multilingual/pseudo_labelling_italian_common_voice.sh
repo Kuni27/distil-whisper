@@ -27,7 +27,7 @@ export HF_ALLOW_CODE_EXECUTION=1
 
 accelerate launch run_pseudo_labelling.py \
   --model_name_or_path "openai/whisper-large-v3" \
-  --dataset_name "mozilla-foundation/common_voice_16_1" \
+  --dataset_name "deepdml/common_voice_17_0_it_pseudo_labelled-large-v3" \
   --dataset_config_name "it" \
   --dataset_split_name "train+validation+test" \
   --text_column_name "sentence" \

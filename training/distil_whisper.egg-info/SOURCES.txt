@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+distil_whisper.egg-info/PKG-INFO
+distil_whisper.egg-info/SOURCES.txt
+distil_whisper.egg-info/dependency_links.txt
+distil_whisper.egg-info/requires.txt
+distil_whisper.egg-info/top_level.txt
