@@ -21,7 +21,7 @@ export http_proxy=http://10.72.8.25:8080
 export https_proxy=http://10.72.8.25:8080
 
 # Set WandB API key
-export WANDB_API_KEY="856a2fc7b95dac753d8efc995d2136072384bb27"
+export WANDB_API_KEY=""
 export HF_ALLOW_CODE_EXECUTION=1
 
 
