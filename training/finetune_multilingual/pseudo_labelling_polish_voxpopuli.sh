@@ -24,7 +24,7 @@ module load WebProxy
 export http_proxy=http://10.73.132.63:8080
 export https_proxy=http://10.73.132.63:8080
 
-export WANDB_API_KEY="856a2fc7b95dac753d8efc995d2136072384bb27"
+export WANDB_API_KEY=""
 
 # Run the accelerate command with VoxPopuli dataset parameters
 accelerate launch run_pseudo_labelling.py \
